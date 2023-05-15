@@ -74,8 +74,9 @@ class Consumer1 implements Runnable{
 public class InterthreadCommDemoCorreccted {
 	public static void main(String[] args) {
 		Qu q = new Qu();
-		Producer1 p = new Producer1(q);
+		
 		Consumer1 c = new Consumer1(q);
+		Producer1 p = new Producer1(q);
 		
 		//System.out.println(q instanceof Runnable);
 	}
